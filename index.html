@@ -1,11 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QEPBZRR837"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-QEPBZRR837');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YD Software - Soluções Inteligentes</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>YD Software - Soluções Inteligentes em Desenvolvimento e IA</title>
+    <meta name="description" content="YD Software oferece soluções inteligentes em desenvolvimento de software, inteligência artificial e consultoria em TI. Transformamos negócios com tecnologia inovadora e processos otimizados.">
+    <meta name="keywords" content="desenvolvimento software, inteligência artificial, consultoria TI, automação processos, soluções personalizadas, IA, tecnologia, inovação">
+    <meta name="author" content="YD Software">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ydsoftware.com/">
+    <meta property="og:title" content="YD Software - Soluções Inteligentes em Desenvolvimento e IA">
+    <meta property="og:description" content="Transformamos negócios com soluções inteligentes em desenvolvimento de software, inteligência artificial e consultoria em TI.">
+    <meta property="og:image" content="https://ydsoftware.com/assets/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ydsoftware.com/">
+    <meta property="twitter:title" content="YD Software - Soluções Inteligentes em Desenvolvimento e IA">
+    <meta property="twitter:description" content="Transformamos negócios com soluções inteligentes em desenvolvimento de software, inteligência artificial e consultoria em TI.">
+    <meta property="twitter:image" content="https://ydsoftware.com/assets/twitter-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ydsoftware.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "YD Software",
+        "alternateName": "YD Software - Soluções Inteligentes",
+        "url": "https://ydsoftware.com",
+        "logo": "https://ydsoftware.com/assets/logo.png",
+        "description": "YD Software oferece soluções inteligentes em desenvolvimento de software, inteligência artificial e consultoria em TI. Transformamos negócios com tecnologia inovadora e processos otimizados.",
+        "foundingDate": "2025",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+55-11-99999-9999",
+            "contactType": "customer service",
+            "email": "contato@ydsoftware.com",
+            "availableLanguage": "Portuguese"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "BR",
+            "addressLocality": "São Paulo"
+        },
+        "sameAs": [
+            "https://linkedin.com/company/ydsoftware",
+            "https://github.com/ydsoftware"
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Serviços YD Software",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Desenvolvimento de Software",
+                        "description": "Criação de soluções personalizadas para automatizar processos e melhorar a eficiência da sua empresa."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Inteligência Artificial",
+                        "description": "Implementação de IA para tornar seus sistemas mais inteligentes, ágeis e inovadores."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Consultoria em TI e Processos",
+                        "description": "Análise e otimização de processos, com recomendações estratégicas e suporte técnico especializado."
+                    }
+                }
+            ]
+        }
+    }
+    </script>
     <style>
         * {
             box-sizing: border-box;
@@ -31,8 +128,9 @@
             top: 0;
             z-index: 100;
         }
-        header h1 {
+        header .logo h2 {
             font-size: 1.6rem;
+            margin: 0;
         }
         nav a {
             color: white;
@@ -145,7 +243,9 @@
 <body>
 
     <header>
-        <h1>YD Software - Soluções Inteligentes</h1>
+        <div class="logo">
+            <h2>YD Software - Soluções Inteligentes</h2>
+        </div>
         <nav>
             <a href="#servicos">Serviços</a>
             <a href="#portfolio">Portfólio</a>
@@ -162,42 +262,42 @@
     <section id="servicos">
         <h2>Nossos Serviços</h2>
         <div class="cards">
-            <div class="card">
-                <i class="fas fa-laptop-code"></i>
+            <article class="card">
+                <i class="fas fa-laptop-code" aria-label="Ícone de desenvolvimento de software"></i>
                 <h3>Desenvolvimento de Software</h3>
                 <p>Criação de soluções personalizadas para automatizar processos e melhorar a eficiência da sua empresa.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-brain"></i>
+            </article>
+            <article class="card">
+                <i class="fas fa-brain" aria-label="Ícone de inteligência artificial"></i>
                 <h3>Inteligência Artificial</h3>
                 <p>Implementação de IA para tornar seus sistemas mais inteligentes, ágeis e inovadores.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-chart-line"></i>
+            </article>
+            <article class="card">
+                <i class="fas fa-chart-line" aria-label="Ícone de consultoria e análise"></i>
                 <h3>Consultoria em TI e Processos</h3>
                 <p>Análise e otimização de processos, com recomendações estratégicas e suporte técnico especializado.</p>
-            </div>
+            </article>
         </div>
     </section>
 
     <section id="portfolio">
         <h2>Portfólio</h2>
         <div class="cards">
-            <div class="card">
-                <i class="fas fa-project-diagram"></i>
+            <article class="card">
+                <i class="fas fa-project-diagram" aria-label="Ícone de projeto"></i>
                 <h3>Projeto 1</h3>
                 <p>Descrição breve do projeto, tecnologias usadas e impacto gerado.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-project-diagram"></i>
+            </article>
+            <article class="card">
+                <i class="fas fa-project-diagram" aria-label="Ícone de projeto"></i>
                 <h3>Projeto 2</h3>
                 <p>Descrição breve do projeto, tecnologias usadas e impacto gerado.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-project-diagram"></i>
+            </article>
+            <article class="card">
+                <i class="fas fa-project-diagram" aria-label="Ícone de projeto"></i>
                 <h3>Projeto 3</h3>
                 <p>Descrição breve do projeto, tecnologias usadas e impacto gerado.</p>
-            </div>
+            </article>
         </div>
     </section>
 

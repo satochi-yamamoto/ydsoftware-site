@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da Empresa - Soluções Inteligentes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #1f2937;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        header h1 {
+            font-size: 1.6rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #38bdf8, #6366f1);
+            color: white;
+            text-align: center;
+            padding: 8rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease forwards;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 1.2s ease forwards;
+        }
+        .btn-primary {
+            background: #facc15;
+            color: #0f172a;
+            padding: 0.9rem 2.5rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .btn-primary:hover {
+            transform: scale(1.05);
+        }
+
+        /* Sections */
+        section {
+            padding: 6rem 2rem;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+            color: #0f172a;
+        }
+
+        /* Cards */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+        .card i {
+            font-size: 2rem;
+            color: #6366f1;
+            margin-bottom: 1rem;
+        }
+        .card h3 {
+            margin-bottom: 1rem;
+            color: #0f172a;
+        }
+        .card p {
+            color: #475569;
+        }
+
+        /* Footer */
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        footer a {
+            color: #facc15;
+            text-decoration: none;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            0% {opacity:0; transform: translateY(30px);}
+            100% {opacity:1; transform: translateY(0);}
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nome da Empresa</h1>
+        <nav>
+            <a href="#servicos">Serviços</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Transformamos negócios com soluções inteligentes</h2>
+        <p>Agilidade, eficiência e inovação com tecnologia e inteligência artificial para otimizar processos e potencializar resultados.</p>
+        <button class="btn-primary">Entre em Contato</button>
+    </section>
+
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="cards">
+            <div class="card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Desenvolvimento de Software</h3>
+                <p>Criação de soluções personalizadas para automatizar processos e melhorar a eficiência da sua empresa.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-brain"></i>
+                <h3>Inteligência Artificial</h3>
+                <p>Implementação de IA para tornar seus sistemas mais inteligentes, ágeis e inovadores.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Consultoria em TI e Processos</h3>
+                <p>Análise e otimização de processos, com recomendações estratégicas e suporte técnico especializado.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <div class="cards">
+            <div class="card">
+                <i class="fas fa-project-diagram"></i>
+                <h3>Projeto 1</h3>
+                <p>Descrição breve do projeto, tecnologias usadas e impacto gerado.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-project-diagram"></i>
+                <h3>Projeto 2</h3>
+                <p>Descrição breve do projeto, tecnologias usadas e impacto gerado.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-project-diagram"></i>
+                <h3>Projeto 3</h3>
+                <p>Descrição breve do projeto, tecnologias usadas e impacto gerado.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p style="text-align:center; margin-bottom:1rem;">Entre em contato conosco para conhecer nossas soluções:</p>
+        <p style="text-align:center;">Email: <a href="mailto:contato@empresa.com">contato@empresa.com</a> | Telefone: (11) 99999-9999</p>
+    </section>
+
+    <footer>
+        &copy; 2025 Nome da Empresa. Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>
